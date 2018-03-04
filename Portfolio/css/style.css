@@ -1,0 +1,358 @@
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+body, h2, h3, h4, h5, h6 {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: 100;
+}
+
+h1 {
+  font-family: 'Fredoka One', cursive, Helvetica,sans-serif;
+}
+
+/* Menu Bar */
+.topnav, .main-footer {
+  border-bottom: 2px inset rgba(99, 63, 93, 0.17); 
+  background: #d9dada;
+  box-shadow: 0px 1px rgba(0, 0, 0, 0.3)
+}
+
+.topnav p.navbar-text {
+  color: #494949;
+  font-size: 16px;
+}
+
+
+.topnav ul.navbar-nav li {
+  padding: 0 8px;
+} 
+
+.topnav ul.navbar-nav li a {
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-color:$morkfarg;
+  padding: 8px;
+  background: #d9dada;
+  color: #494949;
+  
+}
+
+.topnav ul.navbar-nav li a:hover,
+.topnav ul.navbar-nav li a:focus
+{
+  background: #494949;
+  color: #d9dada; 
+}
+
+.list-style {
+  font-size: 14px;
+  background: #d9dada;
+  margin-top: 10px;
+}
+
+@media(max-width: 767px){
+  
+  .topnav p.navbar-text{
+    font-size: 12px;
+  }
+  
+}
+
+
+/* Home page */
+
+.main-header {
+  /*Make sure nav bar won't overlap content */padding-top: 200px;
+  padding-botton: 50px;
+  
+  background: url('https://farm5.staticflickr.com/4769/39628248451_b6224d1fb3_z.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 855px;
+  
+}
+
+.bg_overlay{
+  height: 855px; 
+}
+.home-message {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* Big header */
+.home-message h1 {
+  font-size: 60px;
+  margin-top: -50px;
+  text-shadow: 2px 1px 2px #000;
+  color: rgba(251, 238, 245, 1);
+}
+/* Small header*/
+.home-message h3 {
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+  color: #171516;
+}
+
+.button {
+  color: rgba(251, 238, 245, 1);
+  text-shadow: 2px 1px 2px #000;
+  display:inline-block;
+  text-align:center;
+  margin: 10px;
+ }
+
+.button:hover,
+.button:focus {
+  color: rgba(251, 238, 245, 1);
+}
+
+.home-social-buttom li {
+  font-size:70px;
+  /* Safari */
+  -webkit-transition: font-size 1s; 
+  transition: font-size 1s;
+}
+
+.home-social-buttom li:hover {
+  font-size:90px;
+}
+
+@media(max-width:767px) {
+    .home-message {
+        padding-bottom: 15%;
+  }
+    .home-message > h1 {
+        font-size: 40px;
+    }
+  
+  .home-message > h3 {
+        font-size: 16px;
+    }
+  
+  ul.home-social-buttom > li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+    
+  }
+     
+  ul.home-social-buttom > li:last-child {
+    margin-bottom: 0;
+  } 
+    
+  .divider-line {
+    width: 100%;
+  }
+  
+  .button {
+    color: rgba(251, 238, 245, 1);
+  }
+  
+  .home-social-buttom li {
+    font-size:50px;
+  }
+ }
+
+
+.divider-line {
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+ 
+
+/* About section*/
+
+.about-content {
+  padding: 50px 0;
+    background: url('https://farm5.staticflickr.com/4748/24760009807_cdfa13d7d9_z.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 755px;
+  }
+
+.bg_overlay2 {
+  height: 755px; 
+}
+
+.about-title {
+  font-size: 280%;
+  color: #ffa500;
+  margin-top: 60px;
+  font-weight: bold;
+  text-align: center;
+    
+}
+
+.about-description {
+  font-size: 18px;
+  color: #ffffff;
+  text-align: justify;
+}
+
+.about-details-style {
+  background-color: rgba(0,0,0, 0.5);
+  padding: 20px;
+  margin: 0 100px;
+ 
+}
+
+.about-pic {
+  border: 2px groove #ccc;
+  text-align: center;
+  border-radius: 50%;
+  height: auto;
+  width: 300px;
+  margin-top: 30px; 
+  
+}
+
+@media(max-width:767px) {
+  
+  .about-pic{
+    height: auto;
+    width: 200px;
+  }
+  
+  .about-title {
+  font-size: 200%;
+  }
+  
+  .about-description {
+     text-align: left;
+    font-size: 16px;
+  }
+  
+}
+
+@media(min-width:300px) and (max-width:1199px) {
+  
+  .about-details-style{
+    margin: auto;
+  }
+}
+
+/* Portfolio section */
+.main-portfolio {
+  padding: 50px 0;
+  background: url('https://farm5.staticflickr.com/4695/27898593229_6e4831893b_z.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.portfolio-title{
+  font-size: 280%;
+  margin-bottom: 40px;
+}
+
+.portfolio-line {
+  border: 2px solid #494949;
+  margin-bottom: 50px;
+  border-bottom: 1px inset rgba(99, 63, 93, 0.17); 
+ 
+}
+
+.portfolio-format {
+  margin: 0 0 10px;
+  right: 0;
+ 
+}
+
+.portfolio-format .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto; 
+}
+
+.portfolio-format .portfolio-caption{
+  max-width: 400px;
+  margin: 0 auto;
+  background: rgba(0,0,0, 0.8);
+  text-align: center;
+  padding: 20px; 
+  
+}
+/*
+.portfolio-format .portfolio-caption-hover{
+  background: rgba(178,178,178,178);
+   
+} */
+
+.portfolio-format .portfolio-caption h3 {
+  color: #ffffff;
+  margin: 0;
+}
+
+.portfolio-format .portfolio-caption p {
+  color: #e5e5e5;
+  padding-top: 10px;
+  font-style: italic;
+  font-size: 13px;
+  margin: 0 auto;
+}
+
+@media (max-width:767px) {
+  .portfolio-format {
+    margin: 0 0 30px;
+  }
+  
+}
+.image-link {
+ 
+  height: 250px;
+} 
+
+/* Resume Section*/
+
+.resume-page {
+  padding: 50px 0;
+  background: url('https://farm5.staticflickr.com/4711/39420754004_4e48a94f1a_z.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: none; 
+}
+
+.resume-page img {
+  text-align: center;
+  height: auto;
+  width: 50%;
+}
+
+/* Footer section */
+
+.main-footer {
+  height: 80px;
+}
+
+.footer-txt {
+  text-align: center;
+  padding-top: 30px;
+  }
+
+  .bt-footer {
+  position: relative;
+  float: right;
+  margin-top: 10px;
+}
+
+.footer-button {
+  color: #494949;
+  font-size: 50px;
+}
+
+ @media(min-width:300px) and (max-width:991px){
+  
+   .bt-footer {
+    position: relative;
+    text-align: right;
+    margin-top: -35px;
+  }
+   
+   .footer-txt {
+     font-size: 12px;
+     padding-right: 10px;
+   }
+   
+   .footer-button {
+      display: none;
+   }
+  
+} 
